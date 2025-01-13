@@ -3,7 +3,7 @@ package com.practice.tests;
 import com.practice.library.BrowserUtilities;
 import com.practice.library.ConfigurationReader;
 import com.practice.library.Driver;
-import com.practice.pages.QA_Practice_DropDownsPage;
+import com.practice.pages.QAPracticeDropDownsPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Dropdowns {
-    QA_Practice_DropDownsPage dropDownsPage = new QA_Practice_DropDownsPage();
+    QAPracticeDropDownsPage dropDownsPage = new QAPracticeDropDownsPage();
 
     Logger LOG = LogManager.getLogger();
 
