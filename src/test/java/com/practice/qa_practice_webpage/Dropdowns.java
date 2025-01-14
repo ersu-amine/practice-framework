@@ -1,4 +1,4 @@
-package com.practice.tests;
+package com.practice.qa_practice_webpage;
 
 import com.practice.library.BrowserUtilities;
 import com.practice.library.ConfigurationReader;
