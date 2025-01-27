@@ -10,7 +10,7 @@ public class ConfigurationReader {
     private static Properties properties = new Properties();
     static {
         try {
-            FileInputStream file = new FileInputStream("configuration.properties");
+            FileInputStream file = new FileInputStream("configuration2.properties");
             properties.load(file);
             file.close();
         } catch (IOException e) {
