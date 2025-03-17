@@ -31,5 +31,6 @@ public class RegistrationSteps extends RegistrationPage {
     @Then("user sees message {string}")
     public void user_sees_message(String confirmationMessage) {
         verifyRegistrationMessage(confirmationMessage);
+        LOG.info("Registration is complete");
     }
 }

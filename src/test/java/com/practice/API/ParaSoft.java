@@ -12,8 +12,7 @@ import java.util.Map;
 public class ParaSoft {
 
     @Test
-    public void test() {
-        //https://parabank.parasoft.com/parabank/index.htm
+    public void getUser() {
         RestAssured.baseURI = ConfigurationReader.getProperty("parasoft_API");
 
         //login
