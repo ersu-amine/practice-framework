@@ -28,12 +28,11 @@ public class Alerts {
         LOG.info(cssValue);
         LOG.info(elementFont);
         LOG.info(fontSize);
+        
         //Driver.getDriver().switchTo().alert().accept();
         alertsPage.alertButton.click();
         Alert alert = Driver.getDriver().switchTo().alert();
         LOG.info("Driver switch to alert");
-
-
 
         alert.accept();
         LOG.info("Alert has been accepted");
