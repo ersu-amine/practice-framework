@@ -9,6 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 
 public class Alerts {
 
@@ -20,10 +21,17 @@ public class Alerts {
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get(ConfigurationReader.getProperty("qa_practice") + "/alerts");
 
+        //getting colour of the header text
+        String cssValue = Driver.getDriver().findElement(By.tagName("h2")).getCssValue("color");
+        String elementFont = Driver.getDriver().findElement(By.tagName("h2")).getCssValue("font-family");
+        LOG.info(cssValue);
+        LOG.info(elementFont);
         //Driver.getDriver().switchTo().alert().accept();
         alertsPage.alertButton.click();
         Alert alert = Driver.getDriver().switchTo().alert();
         LOG.info("Driver switch to alert");
+
+
 
         alert.accept();
         LOG.info("Alert has been accepted");
