@@ -24,8 +24,10 @@ public class Alerts {
         //getting colour of the header text
         String cssValue = Driver.getDriver().findElement(By.tagName("h2")).getCssValue("color");
         String elementFont = Driver.getDriver().findElement(By.tagName("h2")).getCssValue("font-family");
+        String fontSize = Driver.getDriver().findElement(By.tagName("h2")).getCssValue("font-size");
         LOG.info(cssValue);
         LOG.info(elementFont);
+        LOG.info(fontSize);
         //Driver.getDriver().switchTo().alert().accept();
         alertsPage.alertButton.click();
         Alert alert = Driver.getDriver().switchTo().alert();
