@@ -39,7 +39,7 @@ public class BookStoreAPI {
     //TODO implement masking username and password
     @Test
     void createUser() {
-        Map < String, String> userData = Map.of("userName","theflash543","password","Hello123@");
+        Map < String, String> userData = Map.of("userName","theflash9","password","Hello123@");
 
         RestAssured.given().accept(ContentType.JSON)
                 .contentType(ContentType.JSON)

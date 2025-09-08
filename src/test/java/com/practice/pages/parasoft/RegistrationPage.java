@@ -53,8 +53,6 @@ public class RegistrationPage {
     private WebElement messageConfirmation;
 
     public void register() {
-        try {
-            //TODO implement randomized information for user
             firstName.sendKeys(ConfigurationReader.getProperty("firstname"));
             lastName.sendKeys(ConfigurationReader.getProperty("lastname"));
             address.sendKeys(ConfigurationReader.getProperty("address"));
@@ -70,22 +68,15 @@ public class RegistrationPage {
             passwordInput.sendKeys(password);
             confirmPasswordInput.sendKeys(password);
             BrowserUtilities.sleep(2);
-        } catch (InterruptedException e) {
-            System.out.println("Thread was interrupted: " + e.getMessage());
-        }
     }
     public void clickRegisterButton() {
         registerButton.click();
     }
 
     public void verifyRegistrationMessage(String message){
-        try {
             BrowserUtilities.sleep(2);
             Assert.assertEquals(message, messageConfirmation.getText());
-        } catch (InterruptedException e) {
-            System.out.println("Thread was interrupted");
-            throw new RuntimeException(e);
-        }
+
     }
 
 }
