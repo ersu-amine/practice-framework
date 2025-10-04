@@ -3,7 +3,7 @@ package com.practice.qa_practice_webpage;
 import com.practice.library.BrowserUtilities;
 import com.practice.library.ConfigurationReader;
 import com.practice.library.Driver;
-import com.practice.pages.EvilTesterAlertsPage;
+import com.practice.pages.AlertsPage;
 import com.practice.pages.QAPracticeAlertsPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -65,7 +65,7 @@ public class Alerts {
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get(ConfigurationReader.getProperty("evil_tester")+"/alerts/alert-test.html");
 
-        EvilTesterAlertsPage alertPage = new EvilTesterAlertsPage();
+        AlertsPage alertPage = new AlertsPage();
 
         alertPage.promptAlert.click();
         BrowserUtilities.sleep(2);
