@@ -3,9 +3,7 @@ package com.practice.API.RestfulBooker;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
+
 
 import java.util.HashMap;
 import java.util.Map;

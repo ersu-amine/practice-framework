@@ -1,4 +1,4 @@
-package com.practice.qa_practice_webpage;
+package com.practice.qa_practice;
 
 import com.practice.library.BrowserUtilities;
 import com.practice.library.ConfigurationReader;
@@ -14,8 +14,11 @@ import org.openqa.selenium.By;
 public class Alerts {
 
     QAPracticeAlertsPage alertsPage = new QAPracticeAlertsPage();
-
     Logger LOG = LogManager.getLogger();
+
+
+
+
     @Test
     void simpleAlert() throws InterruptedException {
         Driver.getDriver().manage().window().maximize();

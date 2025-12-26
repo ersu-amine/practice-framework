@@ -2,11 +2,10 @@ package com.practice.API;
 
 
 import com.practice.library.BrowserUtilities;
-import com.practice.library.ConfigurationReader;
 import com.practice.library.Driver;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 

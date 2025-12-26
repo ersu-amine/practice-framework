@@ -3,7 +3,7 @@ package com.practice.pages.parasoft;
 import com.practice.library.BrowserUtilities;
 import com.practice.library.ConfigurationReader;
 import com.practice.library.Driver;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -75,7 +75,7 @@ public class RegistrationPage {
 
     public void verifyRegistrationMessage(String message){
             BrowserUtilities.sleep(2);
-            Assert.assertEquals(message, messageConfirmation.getText());
+        Assertions.assertEquals(message, messageConfirmation.getText());
 
     }
 

@@ -1,8 +1,8 @@
-package com.practice.qa_practice_webpage;
+package com.practice.qa_practice;
 
 import com.practice.library.BrowserUtilities;
 import com.practice.library.Driver;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
 public class GetAttribute {
